@@ -1,0 +1,30 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace 'com.example.yourapp'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.yourapp"
+        minSdk 23
+        targetSdk 35
+        versionCode 2
+        versionName "2.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+}
