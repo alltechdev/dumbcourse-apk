@@ -89,7 +89,7 @@ public class NtfyService extends Service {
             NotificationChannel serviceChannel = new NotificationChannel(
                 CHANNEL_ID,
                 "Notification Service",
-                NotificationManager.IMPORTANCE_LOW
+                NotificationManager.IMPORTANCE_MIN
             );
             serviceChannel.setDescription("Keeps push notifications active");
             nm.createNotificationChannel(serviceChannel);
